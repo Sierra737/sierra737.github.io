@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+
+@keyframes slidein {
+    from {
+      margin-left: 200%;
+    }
+  
+    to {
+      margin-left: 0%;  
+    }
+}
+
+
+body{
+    width: 1366px;
+    height: 768px;
+}
+    
+.main {
+        background-image: url(Images/fon.jpg); 
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        width: 1366px;
+        height: 768px;
+}
+
+
+#people-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 5px;
+      width: 25%;
+      height:80%;
+}
+
+#people-list li{
+
+      display: flex;
+      margin: 15px;
+      margin-top: 30px;
+      padding-left: 7px;
+      width: 130px;
+      height: 75px;
+      flex-grow: 1; 
+      font-family: 'Fugaz One', cursive;
+      border: 1px solid #e7c712;
+      justify-content: center; 
+      align-items: center; 
+      cursor: pointer;
+      background:url(Images/font.png) no-repeat;
+      color: rgb(255, 193, 7);
+      background-size: cover;
+      border-radius: 20%;
+}
+
+
+.wrapper-buttons{
+   position: absolute;
+   flex-direction: column-reverse;
+   width:10%;
+   left:380px;
+   top:250px;
+}
+
+
+.arrows{
+  border: 1px solid #e7c712;
+  color: #fff;
+  border-radius: 20%;
+  margin: 3px;
+  width: 100px;
+  height: 47px;
+}
+
+#arrUp{
+  position: absolute;
+  background:url(Images/up.png) no-repeat;
+  background-size:cover;
+  left:380px;
+  top:180px;
+}
+
+#arrDown{
+  position: absolute;
+  background:url(Images/down.png) no-repeat;
+  background-size: cover; 
+  left:380px;
+  top:400px;
+}
+
+button {
+
+  border: 1px solid #e7c712;
+  color: #fff;
+  background: url(Images/forBut.png) no-repeat;
+  background-size: cover;
+  border-radius: 20%;
+  margin: 5px;
+  width: 100px;
+  height: 57px;
+
+}
+
+
+table{
+        position:absolute;
+        color: black;
+        left:40%;
+        top:150px;
+        flex-direction: column;
+        border: 3px solid green;
+        width:338px;
+        background-color: rgba(128, 255, 212, 70%);
+        font-family: 'Fugaz One', cursive;
+        font-size:15px;
+        font-weight: 700;
+        border-radius: 5%;
+        animation: 3s alternate slidein;
+          
+       
+}
+   
+td{
+        border: 1px solid green;
+        border-radius: 8%;
+        padding: 10px;
+    }
+
+
